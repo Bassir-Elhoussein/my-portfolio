@@ -16,7 +16,7 @@ export function Contact() {
 
         <div className="grid md:grid-cols-2 gap-4 max-w-2xl mx-auto">
           <Link
-            href="https://wa.me/212663124720"
+            href="https://wa.me/212628968780"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-3 px-6 py-4 bg-accent text-accent-foreground rounded-lg hover:opacity-90 transition-opacity font-medium"
