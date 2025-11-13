@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Github, Linkedin, Mail } from "lucide-react"
 
 export function Hero() {
@@ -67,17 +68,21 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="hidden md:flex items-center justify-center">
-          <div className="relative w-80 h-80">
-            <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-transparent rounded-2xl blur-3xl"></div>
-            <div className="relative bg-card border border-border rounded-2xl p-8 flex items-center justify-center h-full">
-              <div className="text-center space-y-4">
-                <div className="text-6xl font-bold text-accent">{"<>"}</div>
-                <p className="text-muted-foreground">Full Stack Engineer</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div className="hidden md:flex items-center justify-center -mt-10">
+  <div className="relative w-74 h-94"> {/* Reduced size from w-80 h-80 */}
+    <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-transparent rounded-2xl blur-3xl"></div>
+    <div className="relative bg-card border border-border rounded-2xl p-6 flex items-center justify-center h-full overflow-hidden">
+      <Image
+        src="/picture.png"
+        alt="Bassir El Houssein"
+        width={256}
+        height={500}
+        className="w-full h-full object-cover rounded-xl"
+      />
+    </div>
+  </div>
+</div>
+
       </div>
     </section>
   )
